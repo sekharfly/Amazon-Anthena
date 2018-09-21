@@ -1,0 +1,764 @@
+INFO - STARTING DRIVER
+DEBUG - Using custom AWS credentials provider class com.amazonaws.auth.PropertiesFileCredentialsProvider
+ERROR - Failed to run query: com.amazonaws.SdkClientException: Unable to load AWS credentials from the athena_creds file
+	at com.amazonaws.auth.PropertiesFileCredentialsProvider.getCredentials(PropertiesFileCredentialsProvider.java:59)
+	at com.amazonaws.athena.jdbc.shaded.com.amazonaws.http.AmazonHttpClient$RequestExecutor.getCredentialsFromContext(AmazonHttpClient.java:1029)
+	at com.amazonaws.athena.jdbc.shaded.com.amazonaws.http.AmazonHttpClient$RequestExecutor.executeOneRequest(AmazonHttpClient.java:1049)
+	at com.amazonaws.athena.jdbc.shaded.com.amazonaws.http.AmazonHttpClient$RequestExecutor.executeHelper(AmazonHttpClient.java:949)
+	at com.amazonaws.athena.jdbc.shaded.com.amazonaws.http.AmazonHttpClient$RequestExecutor.doExecute(AmazonHttpClient.java:662)
+	at com.amazonaws.athena.jdbc.shaded.com.amazonaws.http.AmazonHttpClient$RequestExecutor.executeWithTimer(AmazonHttpClient.java:636)
+	at com.amazonaws.athena.jdbc.shaded.com.amazonaws.http.AmazonHttpClient$RequestExecutor.execute(AmazonHttpClient.java:619)
+	at com.amazonaws.athena.jdbc.shaded.com.amazonaws.http.AmazonHttpClient$RequestExecutor.access$300(AmazonHttpClient.java:587)
+	at com.amazonaws.athena.jdbc.shaded.com.amazonaws.http.AmazonHttpClient$RequestExecutionBuilderImpl.execute(AmazonHttpClient.java:574)
+	at com.amazonaws.athena.jdbc.shaded.com.amazonaws.http.AmazonHttpClient.execute(AmazonHttpClient.java:446)
+	at com.amazonaws.athena.jdbc.shaded.com.amazonaws.services.athena.AmazonAthenaClient.doInvoke(AmazonAthenaClient.java:941)
+	at com.amazonaws.athena.jdbc.shaded.com.amazonaws.services.athena.AmazonAthenaClient.invoke(AmazonAthenaClient.java:917)
+	at com.amazonaws.athena.jdbc.shaded.com.amazonaws.services.athena.AmazonAthenaClient.runQuery(AmazonAthenaClient.java:806)
+	at com.amazonaws.athena.jdbc.AthenaServiceClient.runQuery(AthenaServiceClient.java:159)
+	at com.amazonaws.athena.jdbc.AthenaQueryExecutor.startQuery(AthenaQueryExecutor.java:34)
+	at com.amazonaws.athena.jdbc.AthenaConnection.startQuery(AthenaConnection.java:574)
+	at com.amazonaws.athena.jdbc.AthenaStatement.execute(AthenaStatement.java:204)
+	at com.amazonaws.athena.jdbc.AthenaStatement.executeQuery(AthenaStatement.java:61)
+	at AthenaJDBCTest01.main(AthenaJDBCTest01.java:41)
+Caused by: java.io.FileNotFoundException: File doesn't exist:  /home/sekharvanna/Documents/STSPROJECTS/Amazon Anthena/athena-playground-master/athena_creds
+	at com.amazonaws.auth.PropertiesCredentials.<init>(PropertiesCredentials.java:57)
+	at com.amazonaws.auth.PropertiesFileCredentialsProvider.getCredentials(PropertiesFileCredentialsProvider.java:57)
+	... 18 more
+
+com.amazonaws.SdkClientException: Unable to load AWS credentials from the athena_creds file
+	at com.amazonaws.auth.PropertiesFileCredentialsProvider.getCredentials(PropertiesFileCredentialsProvider.java:59)
+	at com.amazonaws.athena.jdbc.shaded.com.amazonaws.http.AmazonHttpClient$RequestExecutor.getCredentialsFromContext(AmazonHttpClient.java:1029)
+	at com.amazonaws.athena.jdbc.shaded.com.amazonaws.http.AmazonHttpClient$RequestExecutor.executeOneRequest(AmazonHttpClient.java:1049)
+	at com.amazonaws.athena.jdbc.shaded.com.amazonaws.http.AmazonHttpClient$RequestExecutor.executeHelper(AmazonHttpClient.java:949)
+	at com.amazonaws.athena.jdbc.shaded.com.amazonaws.http.AmazonHttpClient$RequestExecutor.doExecute(AmazonHttpClient.java:662)
+	at com.amazonaws.athena.jdbc.shaded.com.amazonaws.http.AmazonHttpClient$RequestExecutor.executeWithTimer(AmazonHttpClient.java:636)
+	at com.amazonaws.athena.jdbc.shaded.com.amazonaws.http.AmazonHttpClient$RequestExecutor.execute(AmazonHttpClient.java:619)
+	at com.amazonaws.athena.jdbc.shaded.com.amazonaws.http.AmazonHttpClient$RequestExecutor.access$300(AmazonHttpClient.java:587)
+	at com.amazonaws.athena.jdbc.shaded.com.amazonaws.http.AmazonHttpClient$RequestExecutionBuilderImpl.execute(AmazonHttpClient.java:574)
+	at com.amazonaws.athena.jdbc.shaded.com.amazonaws.http.AmazonHttpClient.execute(AmazonHttpClient.java:446)
+	at com.amazonaws.athena.jdbc.shaded.com.amazonaws.services.athena.AmazonAthenaClient.doInvoke(AmazonAthenaClient.java:941)
+	at com.amazonaws.athena.jdbc.shaded.com.amazonaws.services.athena.AmazonAthenaClient.invoke(AmazonAthenaClient.java:917)
+	at com.amazonaws.athena.jdbc.shaded.com.amazonaws.services.athena.AmazonAthenaClient.runQuery(AmazonAthenaClient.java:806)
+	at com.amazonaws.athena.jdbc.AthenaServiceClient.runQuery(AthenaServiceClient.java:159)
+	at com.amazonaws.athena.jdbc.AthenaQueryExecutor.startQuery(AthenaQueryExecutor.java:34)
+	at com.amazonaws.athena.jdbc.AthenaConnection.startQuery(AthenaConnection.java:574)
+	at com.amazonaws.athena.jdbc.AthenaStatement.execute(AthenaStatement.java:204)
+	at com.amazonaws.athena.jdbc.AthenaStatement.executeQuery(AthenaStatement.java:61)
+	at AthenaJDBCTest01.main(AthenaJDBCTest01.java:41)
+Caused by: java.io.FileNotFoundException: File doesn't exist:  /home/sekharvanna/Documents/STSPROJECTS/Amazon Anthena/athena-playground-master/athena_creds
+	at com.amazonaws.auth.PropertiesCredentials.<init>(PropertiesCredentials.java:57)
+	at com.amazonaws.auth.PropertiesFileCredentialsProvider.getCredentials(PropertiesFileCredentialsProvider.java:57)
+	... 18 more
+INFO - STARTING DRIVER
+DEBUG - Using custom AWS credentials provider class com.amazonaws.auth.PropertiesFileCredentialsProvider
+ERROR - Failed to run query: com.amazonaws.SdkClientException: Unable to load AWS credentials from the athena_creds file
+	at com.amazonaws.auth.PropertiesFileCredentialsProvider.getCredentials(PropertiesFileCredentialsProvider.java:59)
+	at com.amazonaws.athena.jdbc.shaded.com.amazonaws.http.AmazonHttpClient$RequestExecutor.getCredentialsFromContext(AmazonHttpClient.java:1029)
+	at com.amazonaws.athena.jdbc.shaded.com.amazonaws.http.AmazonHttpClient$RequestExecutor.executeOneRequest(AmazonHttpClient.java:1049)
+	at com.amazonaws.athena.jdbc.shaded.com.amazonaws.http.AmazonHttpClient$RequestExecutor.executeHelper(AmazonHttpClient.java:949)
+	at com.amazonaws.athena.jdbc.shaded.com.amazonaws.http.AmazonHttpClient$RequestExecutor.doExecute(AmazonHttpClient.java:662)
+	at com.amazonaws.athena.jdbc.shaded.com.amazonaws.http.AmazonHttpClient$RequestExecutor.executeWithTimer(AmazonHttpClient.java:636)
+	at com.amazonaws.athena.jdbc.shaded.com.amazonaws.http.AmazonHttpClient$RequestExecutor.execute(AmazonHttpClient.java:619)
+	at com.amazonaws.athena.jdbc.shaded.com.amazonaws.http.AmazonHttpClient$RequestExecutor.access$300(AmazonHttpClient.java:587)
+	at com.amazonaws.athena.jdbc.shaded.com.amazonaws.http.AmazonHttpClient$RequestExecutionBuilderImpl.execute(AmazonHttpClient.java:574)
+	at com.amazonaws.athena.jdbc.shaded.com.amazonaws.http.AmazonHttpClient.execute(AmazonHttpClient.java:446)
+	at com.amazonaws.athena.jdbc.shaded.com.amazonaws.services.athena.AmazonAthenaClient.doInvoke(AmazonAthenaClient.java:941)
+	at com.amazonaws.athena.jdbc.shaded.com.amazonaws.services.athena.AmazonAthenaClient.invoke(AmazonAthenaClient.java:917)
+	at com.amazonaws.athena.jdbc.shaded.com.amazonaws.services.athena.AmazonAthenaClient.runQuery(AmazonAthenaClient.java:806)
+	at com.amazonaws.athena.jdbc.AthenaServiceClient.runQuery(AthenaServiceClient.java:159)
+	at com.amazonaws.athena.jdbc.AthenaQueryExecutor.startQuery(AthenaQueryExecutor.java:34)
+	at com.amazonaws.athena.jdbc.AthenaConnection.startQuery(AthenaConnection.java:574)
+	at com.amazonaws.athena.jdbc.AthenaStatement.execute(AthenaStatement.java:204)
+	at com.amazonaws.athena.jdbc.AthenaStatement.executeQuery(AthenaStatement.java:61)
+	at AthenaJDBCTest01.main(AthenaJDBCTest01.java:41)
+Caused by: java.io.FileNotFoundException: File doesn't exist:  /home/sekharvanna/Documents/STSPROJECTS/Amazon Anthena/athena-playground-master/athena_creds
+	at com.amazonaws.auth.PropertiesCredentials.<init>(PropertiesCredentials.java:57)
+	at com.amazonaws.auth.PropertiesFileCredentialsProvider.getCredentials(PropertiesFileCredentialsProvider.java:57)
+	... 18 more
+
+com.amazonaws.SdkClientException: Unable to load AWS credentials from the athena_creds file
+	at com.amazonaws.auth.PropertiesFileCredentialsProvider.getCredentials(PropertiesFileCredentialsProvider.java:59)
+	at com.amazonaws.athena.jdbc.shaded.com.amazonaws.http.AmazonHttpClient$RequestExecutor.getCredentialsFromContext(AmazonHttpClient.java:1029)
+	at com.amazonaws.athena.jdbc.shaded.com.amazonaws.http.AmazonHttpClient$RequestExecutor.executeOneRequest(AmazonHttpClient.java:1049)
+	at com.amazonaws.athena.jdbc.shaded.com.amazonaws.http.AmazonHttpClient$RequestExecutor.executeHelper(AmazonHttpClient.java:949)
+	at com.amazonaws.athena.jdbc.shaded.com.amazonaws.http.AmazonHttpClient$RequestExecutor.doExecute(AmazonHttpClient.java:662)
+	at com.amazonaws.athena.jdbc.shaded.com.amazonaws.http.AmazonHttpClient$RequestExecutor.executeWithTimer(AmazonHttpClient.java:636)
+	at com.amazonaws.athena.jdbc.shaded.com.amazonaws.http.AmazonHttpClient$RequestExecutor.execute(AmazonHttpClient.java:619)
+	at com.amazonaws.athena.jdbc.shaded.com.amazonaws.http.AmazonHttpClient$RequestExecutor.access$300(AmazonHttpClient.java:587)
+	at com.amazonaws.athena.jdbc.shaded.com.amazonaws.http.AmazonHttpClient$RequestExecutionBuilderImpl.execute(AmazonHttpClient.java:574)
+	at com.amazonaws.athena.jdbc.shaded.com.amazonaws.http.AmazonHttpClient.execute(AmazonHttpClient.java:446)
+	at com.amazonaws.athena.jdbc.shaded.com.amazonaws.services.athena.AmazonAthenaClient.doInvoke(AmazonAthenaClient.java:941)
+	at com.amazonaws.athena.jdbc.shaded.com.amazonaws.services.athena.AmazonAthenaClient.invoke(AmazonAthenaClient.java:917)
+	at com.amazonaws.athena.jdbc.shaded.com.amazonaws.services.athena.AmazonAthenaClient.runQuery(AmazonAthenaClient.java:806)
+	at com.amazonaws.athena.jdbc.AthenaServiceClient.runQuery(AthenaServiceClient.java:159)
+	at com.amazonaws.athena.jdbc.AthenaQueryExecutor.startQuery(AthenaQueryExecutor.java:34)
+	at com.amazonaws.athena.jdbc.AthenaConnection.startQuery(AthenaConnection.java:574)
+	at com.amazonaws.athena.jdbc.AthenaStatement.execute(AthenaStatement.java:204)
+	at com.amazonaws.athena.jdbc.AthenaStatement.executeQuery(AthenaStatement.java:61)
+	at AthenaJDBCTest01.main(AthenaJDBCTest01.java:41)
+Caused by: java.io.FileNotFoundException: File doesn't exist:  /home/sekharvanna/Documents/STSPROJECTS/Amazon Anthena/athena-playground-master/athena_creds
+	at com.amazonaws.auth.PropertiesCredentials.<init>(PropertiesCredentials.java:57)
+	at com.amazonaws.auth.PropertiesFileCredentialsProvider.getCredentials(PropertiesFileCredentialsProvider.java:57)
+	... 18 more
+INFO - STARTING DRIVER
+DEBUG - Using custom AWS credentials provider class com.amazonaws.auth.PropertiesFileCredentialsProvider
+ERROR - Failed to run query: com.amazonaws.SdkClientException: Unable to load AWS credentials from the athena_creds file
+	at com.amazonaws.auth.PropertiesFileCredentialsProvider.getCredentials(PropertiesFileCredentialsProvider.java:59)
+	at com.amazonaws.athena.jdbc.shaded.com.amazonaws.http.AmazonHttpClient$RequestExecutor.getCredentialsFromContext(AmazonHttpClient.java:1029)
+	at com.amazonaws.athena.jdbc.shaded.com.amazonaws.http.AmazonHttpClient$RequestExecutor.executeOneRequest(AmazonHttpClient.java:1049)
+	at com.amazonaws.athena.jdbc.shaded.com.amazonaws.http.AmazonHttpClient$RequestExecutor.executeHelper(AmazonHttpClient.java:949)
+	at com.amazonaws.athena.jdbc.shaded.com.amazonaws.http.AmazonHttpClient$RequestExecutor.doExecute(AmazonHttpClient.java:662)
+	at com.amazonaws.athena.jdbc.shaded.com.amazonaws.http.AmazonHttpClient$RequestExecutor.executeWithTimer(AmazonHttpClient.java:636)
+	at com.amazonaws.athena.jdbc.shaded.com.amazonaws.http.AmazonHttpClient$RequestExecutor.execute(AmazonHttpClient.java:619)
+	at com.amazonaws.athena.jdbc.shaded.com.amazonaws.http.AmazonHttpClient$RequestExecutor.access$300(AmazonHttpClient.java:587)
+	at com.amazonaws.athena.jdbc.shaded.com.amazonaws.http.AmazonHttpClient$RequestExecutionBuilderImpl.execute(AmazonHttpClient.java:574)
+	at com.amazonaws.athena.jdbc.shaded.com.amazonaws.http.AmazonHttpClient.execute(AmazonHttpClient.java:446)
+	at com.amazonaws.athena.jdbc.shaded.com.amazonaws.services.athena.AmazonAthenaClient.doInvoke(AmazonAthenaClient.java:941)
+	at com.amazonaws.athena.jdbc.shaded.com.amazonaws.services.athena.AmazonAthenaClient.invoke(AmazonAthenaClient.java:917)
+	at com.amazonaws.athena.jdbc.shaded.com.amazonaws.services.athena.AmazonAthenaClient.runQuery(AmazonAthenaClient.java:806)
+	at com.amazonaws.athena.jdbc.AthenaServiceClient.runQuery(AthenaServiceClient.java:159)
+	at com.amazonaws.athena.jdbc.AthenaQueryExecutor.startQuery(AthenaQueryExecutor.java:34)
+	at com.amazonaws.athena.jdbc.AthenaConnection.startQuery(AthenaConnection.java:574)
+	at com.amazonaws.athena.jdbc.AthenaStatement.execute(AthenaStatement.java:204)
+	at com.amazonaws.athena.jdbc.AthenaStatement.executeQuery(AthenaStatement.java:61)
+	at AthenaJDBCTest01.main(AthenaJDBCTest01.java:41)
+Caused by: java.io.FileNotFoundException: File doesn't exist:  /home/sekharvanna/Documents/STSPROJECTS/Amazon Anthena/athena-playground-master/athena_creds
+	at com.amazonaws.auth.PropertiesCredentials.<init>(PropertiesCredentials.java:57)
+	at com.amazonaws.auth.PropertiesFileCredentialsProvider.getCredentials(PropertiesFileCredentialsProvider.java:57)
+	... 18 more
+
+com.amazonaws.SdkClientException: Unable to load AWS credentials from the athena_creds file
+	at com.amazonaws.auth.PropertiesFileCredentialsProvider.getCredentials(PropertiesFileCredentialsProvider.java:59)
+	at com.amazonaws.athena.jdbc.shaded.com.amazonaws.http.AmazonHttpClient$RequestExecutor.getCredentialsFromContext(AmazonHttpClient.java:1029)
+	at com.amazonaws.athena.jdbc.shaded.com.amazonaws.http.AmazonHttpClient$RequestExecutor.executeOneRequest(AmazonHttpClient.java:1049)
+	at com.amazonaws.athena.jdbc.shaded.com.amazonaws.http.AmazonHttpClient$RequestExecutor.executeHelper(AmazonHttpClient.java:949)
+	at com.amazonaws.athena.jdbc.shaded.com.amazonaws.http.AmazonHttpClient$RequestExecutor.doExecute(AmazonHttpClient.java:662)
+	at com.amazonaws.athena.jdbc.shaded.com.amazonaws.http.AmazonHttpClient$RequestExecutor.executeWithTimer(AmazonHttpClient.java:636)
+	at com.amazonaws.athena.jdbc.shaded.com.amazonaws.http.AmazonHttpClient$RequestExecutor.execute(AmazonHttpClient.java:619)
+	at com.amazonaws.athena.jdbc.shaded.com.amazonaws.http.AmazonHttpClient$RequestExecutor.access$300(AmazonHttpClient.java:587)
+	at com.amazonaws.athena.jdbc.shaded.com.amazonaws.http.AmazonHttpClient$RequestExecutionBuilderImpl.execute(AmazonHttpClient.java:574)
+	at com.amazonaws.athena.jdbc.shaded.com.amazonaws.http.AmazonHttpClient.execute(AmazonHttpClient.java:446)
+	at com.amazonaws.athena.jdbc.shaded.com.amazonaws.services.athena.AmazonAthenaClient.doInvoke(AmazonAthenaClient.java:941)
+	at com.amazonaws.athena.jdbc.shaded.com.amazonaws.services.athena.AmazonAthenaClient.invoke(AmazonAthenaClient.java:917)
+	at com.amazonaws.athena.jdbc.shaded.com.amazonaws.services.athena.AmazonAthenaClient.runQuery(AmazonAthenaClient.java:806)
+	at com.amazonaws.athena.jdbc.AthenaServiceClient.runQuery(AthenaServiceClient.java:159)
+	at com.amazonaws.athena.jdbc.AthenaQueryExecutor.startQuery(AthenaQueryExecutor.java:34)
+	at com.amazonaws.athena.jdbc.AthenaConnection.startQuery(AthenaConnection.java:574)
+	at com.amazonaws.athena.jdbc.AthenaStatement.execute(AthenaStatement.java:204)
+	at com.amazonaws.athena.jdbc.AthenaStatement.executeQuery(AthenaStatement.java:61)
+	at AthenaJDBCTest01.main(AthenaJDBCTest01.java:41)
+Caused by: java.io.FileNotFoundException: File doesn't exist:  /home/sekharvanna/Documents/STSPROJECTS/Amazon Anthena/athena-playground-master/athena_creds
+	at com.amazonaws.auth.PropertiesCredentials.<init>(PropertiesCredentials.java:57)
+	at com.amazonaws.auth.PropertiesFileCredentialsProvider.getCredentials(PropertiesFileCredentialsProvider.java:57)
+	... 18 more
+INFO - STARTING DRIVER
+DEBUG - Using custom AWS credentials provider class com.amazonaws.auth.PropertiesFileCredentialsProvider
+ERROR - Failed to run query: com.amazonaws.SdkClientException: Unable to load AWS credentials from the athena_creds file
+	at com.amazonaws.auth.PropertiesFileCredentialsProvider.getCredentials(PropertiesFileCredentialsProvider.java:59)
+	at com.amazonaws.athena.jdbc.shaded.com.amazonaws.http.AmazonHttpClient$RequestExecutor.getCredentialsFromContext(AmazonHttpClient.java:1029)
+	at com.amazonaws.athena.jdbc.shaded.com.amazonaws.http.AmazonHttpClient$RequestExecutor.executeOneRequest(AmazonHttpClient.java:1049)
+	at com.amazonaws.athena.jdbc.shaded.com.amazonaws.http.AmazonHttpClient$RequestExecutor.executeHelper(AmazonHttpClient.java:949)
+	at com.amazonaws.athena.jdbc.shaded.com.amazonaws.http.AmazonHttpClient$RequestExecutor.doExecute(AmazonHttpClient.java:662)
+	at com.amazonaws.athena.jdbc.shaded.com.amazonaws.http.AmazonHttpClient$RequestExecutor.executeWithTimer(AmazonHttpClient.java:636)
+	at com.amazonaws.athena.jdbc.shaded.com.amazonaws.http.AmazonHttpClient$RequestExecutor.execute(AmazonHttpClient.java:619)
+	at com.amazonaws.athena.jdbc.shaded.com.amazonaws.http.AmazonHttpClient$RequestExecutor.access$300(AmazonHttpClient.java:587)
+	at com.amazonaws.athena.jdbc.shaded.com.amazonaws.http.AmazonHttpClient$RequestExecutionBuilderImpl.execute(AmazonHttpClient.java:574)
+	at com.amazonaws.athena.jdbc.shaded.com.amazonaws.http.AmazonHttpClient.execute(AmazonHttpClient.java:446)
+	at com.amazonaws.athena.jdbc.shaded.com.amazonaws.services.athena.AmazonAthenaClient.doInvoke(AmazonAthenaClient.java:941)
+	at com.amazonaws.athena.jdbc.shaded.com.amazonaws.services.athena.AmazonAthenaClient.invoke(AmazonAthenaClient.java:917)
+	at com.amazonaws.athena.jdbc.shaded.com.amazonaws.services.athena.AmazonAthenaClient.runQuery(AmazonAthenaClient.java:806)
+	at com.amazonaws.athena.jdbc.AthenaServiceClient.runQuery(AthenaServiceClient.java:159)
+	at com.amazonaws.athena.jdbc.AthenaQueryExecutor.startQuery(AthenaQueryExecutor.java:34)
+	at com.amazonaws.athena.jdbc.AthenaConnection.startQuery(AthenaConnection.java:574)
+	at com.amazonaws.athena.jdbc.AthenaStatement.execute(AthenaStatement.java:204)
+	at com.amazonaws.athena.jdbc.AthenaStatement.executeQuery(AthenaStatement.java:61)
+	at AthenaJDBCTest01.main(AthenaJDBCTest01.java:41)
+Caused by: java.io.FileNotFoundException: File doesn't exist:  /home/sekharvanna/Documents/STSPROJECTS/Amazon Anthena/athena-playground-master/athena_creds
+	at com.amazonaws.auth.PropertiesCredentials.<init>(PropertiesCredentials.java:57)
+	at com.amazonaws.auth.PropertiesFileCredentialsProvider.getCredentials(PropertiesFileCredentialsProvider.java:57)
+	... 18 more
+
+com.amazonaws.SdkClientException: Unable to load AWS credentials from the athena_creds file
+	at com.amazonaws.auth.PropertiesFileCredentialsProvider.getCredentials(PropertiesFileCredentialsProvider.java:59)
+	at com.amazonaws.athena.jdbc.shaded.com.amazonaws.http.AmazonHttpClient$RequestExecutor.getCredentialsFromContext(AmazonHttpClient.java:1029)
+	at com.amazonaws.athena.jdbc.shaded.com.amazonaws.http.AmazonHttpClient$RequestExecutor.executeOneRequest(AmazonHttpClient.java:1049)
+	at com.amazonaws.athena.jdbc.shaded.com.amazonaws.http.AmazonHttpClient$RequestExecutor.executeHelper(AmazonHttpClient.java:949)
+	at com.amazonaws.athena.jdbc.shaded.com.amazonaws.http.AmazonHttpClient$RequestExecutor.doExecute(AmazonHttpClient.java:662)
+	at com.amazonaws.athena.jdbc.shaded.com.amazonaws.http.AmazonHttpClient$RequestExecutor.executeWithTimer(AmazonHttpClient.java:636)
+	at com.amazonaws.athena.jdbc.shaded.com.amazonaws.http.AmazonHttpClient$RequestExecutor.execute(AmazonHttpClient.java:619)
+	at com.amazonaws.athena.jdbc.shaded.com.amazonaws.http.AmazonHttpClient$RequestExecutor.access$300(AmazonHttpClient.java:587)
+	at com.amazonaws.athena.jdbc.shaded.com.amazonaws.http.AmazonHttpClient$RequestExecutionBuilderImpl.execute(AmazonHttpClient.java:574)
+	at com.amazonaws.athena.jdbc.shaded.com.amazonaws.http.AmazonHttpClient.execute(AmazonHttpClient.java:446)
+	at com.amazonaws.athena.jdbc.shaded.com.amazonaws.services.athena.AmazonAthenaClient.doInvoke(AmazonAthenaClient.java:941)
+	at com.amazonaws.athena.jdbc.shaded.com.amazonaws.services.athena.AmazonAthenaClient.invoke(AmazonAthenaClient.java:917)
+	at com.amazonaws.athena.jdbc.shaded.com.amazonaws.services.athena.AmazonAthenaClient.runQuery(AmazonAthenaClient.java:806)
+	at com.amazonaws.athena.jdbc.AthenaServiceClient.runQuery(AthenaServiceClient.java:159)
+	at com.amazonaws.athena.jdbc.AthenaQueryExecutor.startQuery(AthenaQueryExecutor.java:34)
+	at com.amazonaws.athena.jdbc.AthenaConnection.startQuery(AthenaConnection.java:574)
+	at com.amazonaws.athena.jdbc.AthenaStatement.execute(AthenaStatement.java:204)
+	at com.amazonaws.athena.jdbc.AthenaStatement.executeQuery(AthenaStatement.java:61)
+	at AthenaJDBCTest01.main(AthenaJDBCTest01.java:41)
+Caused by: java.io.FileNotFoundException: File doesn't exist:  /home/sekharvanna/Documents/STSPROJECTS/Amazon Anthena/athena-playground-master/athena_creds
+	at com.amazonaws.auth.PropertiesCredentials.<init>(PropertiesCredentials.java:57)
+	at com.amazonaws.auth.PropertiesFileCredentialsProvider.getCredentials(PropertiesFileCredentialsProvider.java:57)
+	... 18 more
+INFO - STARTING DRIVER
+DEBUG - Using custom AWS credentials provider class com.amazonaws.auth.PropertiesFileCredentialsProvider
+ERROR - Failed to run query: com.amazonaws.SdkClientException: Unable to load AWS credentials from the athena_creds file
+	at com.amazonaws.auth.PropertiesFileCredentialsProvider.getCredentials(PropertiesFileCredentialsProvider.java:59)
+	at com.amazonaws.athena.jdbc.shaded.com.amazonaws.http.AmazonHttpClient$RequestExecutor.getCredentialsFromContext(AmazonHttpClient.java:1029)
+	at com.amazonaws.athena.jdbc.shaded.com.amazonaws.http.AmazonHttpClient$RequestExecutor.executeOneRequest(AmazonHttpClient.java:1049)
+	at com.amazonaws.athena.jdbc.shaded.com.amazonaws.http.AmazonHttpClient$RequestExecutor.executeHelper(AmazonHttpClient.java:949)
+	at com.amazonaws.athena.jdbc.shaded.com.amazonaws.http.AmazonHttpClient$RequestExecutor.doExecute(AmazonHttpClient.java:662)
+	at com.amazonaws.athena.jdbc.shaded.com.amazonaws.http.AmazonHttpClient$RequestExecutor.executeWithTimer(AmazonHttpClient.java:636)
+	at com.amazonaws.athena.jdbc.shaded.com.amazonaws.http.AmazonHttpClient$RequestExecutor.execute(AmazonHttpClient.java:619)
+	at com.amazonaws.athena.jdbc.shaded.com.amazonaws.http.AmazonHttpClient$RequestExecutor.access$300(AmazonHttpClient.java:587)
+	at com.amazonaws.athena.jdbc.shaded.com.amazonaws.http.AmazonHttpClient$RequestExecutionBuilderImpl.execute(AmazonHttpClient.java:574)
+	at com.amazonaws.athena.jdbc.shaded.com.amazonaws.http.AmazonHttpClient.execute(AmazonHttpClient.java:446)
+	at com.amazonaws.athena.jdbc.shaded.com.amazonaws.services.athena.AmazonAthenaClient.doInvoke(AmazonAthenaClient.java:941)
+	at com.amazonaws.athena.jdbc.shaded.com.amazonaws.services.athena.AmazonAthenaClient.invoke(AmazonAthenaClient.java:917)
+	at com.amazonaws.athena.jdbc.shaded.com.amazonaws.services.athena.AmazonAthenaClient.runQuery(AmazonAthenaClient.java:806)
+	at com.amazonaws.athena.jdbc.AthenaServiceClient.runQuery(AthenaServiceClient.java:159)
+	at com.amazonaws.athena.jdbc.AthenaQueryExecutor.startQuery(AthenaQueryExecutor.java:34)
+	at com.amazonaws.athena.jdbc.AthenaConnection.startQuery(AthenaConnection.java:574)
+	at com.amazonaws.athena.jdbc.AthenaStatement.execute(AthenaStatement.java:204)
+	at com.amazonaws.athena.jdbc.AthenaStatement.executeQuery(AthenaStatement.java:61)
+	at AthenaJDBCTest01.main(AthenaJDBCTest01.java:41)
+Caused by: java.io.FileNotFoundException: File doesn't exist:  /home/sekharvanna/Documents/STSPROJECTS/Amazon Anthena/athena-playground-master/athena_creds
+	at com.amazonaws.auth.PropertiesCredentials.<init>(PropertiesCredentials.java:57)
+	at com.amazonaws.auth.PropertiesFileCredentialsProvider.getCredentials(PropertiesFileCredentialsProvider.java:57)
+	... 18 more
+
+com.amazonaws.SdkClientException: Unable to load AWS credentials from the athena_creds file
+	at com.amazonaws.auth.PropertiesFileCredentialsProvider.getCredentials(PropertiesFileCredentialsProvider.java:59)
+	at com.amazonaws.athena.jdbc.shaded.com.amazonaws.http.AmazonHttpClient$RequestExecutor.getCredentialsFromContext(AmazonHttpClient.java:1029)
+	at com.amazonaws.athena.jdbc.shaded.com.amazonaws.http.AmazonHttpClient$RequestExecutor.executeOneRequest(AmazonHttpClient.java:1049)
+	at com.amazonaws.athena.jdbc.shaded.com.amazonaws.http.AmazonHttpClient$RequestExecutor.executeHelper(AmazonHttpClient.java:949)
+	at com.amazonaws.athena.jdbc.shaded.com.amazonaws.http.AmazonHttpClient$RequestExecutor.doExecute(AmazonHttpClient.java:662)
+	at com.amazonaws.athena.jdbc.shaded.com.amazonaws.http.AmazonHttpClient$RequestExecutor.executeWithTimer(AmazonHttpClient.java:636)
+	at com.amazonaws.athena.jdbc.shaded.com.amazonaws.http.AmazonHttpClient$RequestExecutor.execute(AmazonHttpClient.java:619)
+	at com.amazonaws.athena.jdbc.shaded.com.amazonaws.http.AmazonHttpClient$RequestExecutor.access$300(AmazonHttpClient.java:587)
+	at com.amazonaws.athena.jdbc.shaded.com.amazonaws.http.AmazonHttpClient$RequestExecutionBuilderImpl.execute(AmazonHttpClient.java:574)
+	at com.amazonaws.athena.jdbc.shaded.com.amazonaws.http.AmazonHttpClient.execute(AmazonHttpClient.java:446)
+	at com.amazonaws.athena.jdbc.shaded.com.amazonaws.services.athena.AmazonAthenaClient.doInvoke(AmazonAthenaClient.java:941)
+	at com.amazonaws.athena.jdbc.shaded.com.amazonaws.services.athena.AmazonAthenaClient.invoke(AmazonAthenaClient.java:917)
+	at com.amazonaws.athena.jdbc.shaded.com.amazonaws.services.athena.AmazonAthenaClient.runQuery(AmazonAthenaClient.java:806)
+	at com.amazonaws.athena.jdbc.AthenaServiceClient.runQuery(AthenaServiceClient.java:159)
+	at com.amazonaws.athena.jdbc.AthenaQueryExecutor.startQuery(AthenaQueryExecutor.java:34)
+	at com.amazonaws.athena.jdbc.AthenaConnection.startQuery(AthenaConnection.java:574)
+	at com.amazonaws.athena.jdbc.AthenaStatement.execute(AthenaStatement.java:204)
+	at com.amazonaws.athena.jdbc.AthenaStatement.executeQuery(AthenaStatement.java:61)
+	at AthenaJDBCTest01.main(AthenaJDBCTest01.java:41)
+Caused by: java.io.FileNotFoundException: File doesn't exist:  /home/sekharvanna/Documents/STSPROJECTS/Amazon Anthena/athena-playground-master/athena_creds
+	at com.amazonaws.auth.PropertiesCredentials.<init>(PropertiesCredentials.java:57)
+	at com.amazonaws.auth.PropertiesFileCredentialsProvider.getCredentials(PropertiesFileCredentialsProvider.java:57)
+	... 18 more
+INFO - STARTING DRIVER
+DEBUG - Using custom AWS credentials provider class com.amazonaws.auth.PropertiesFileCredentialsProvider
+ERROR - Failed to run query: com.amazonaws.SdkClientException: Unable to load AWS credentials from the athena_creds file
+	at com.amazonaws.auth.PropertiesFileCredentialsProvider.getCredentials(PropertiesFileCredentialsProvider.java:59)
+	at com.amazonaws.athena.jdbc.shaded.com.amazonaws.http.AmazonHttpClient$RequestExecutor.getCredentialsFromContext(AmazonHttpClient.java:1029)
+	at com.amazonaws.athena.jdbc.shaded.com.amazonaws.http.AmazonHttpClient$RequestExecutor.executeOneRequest(AmazonHttpClient.java:1049)
+	at com.amazonaws.athena.jdbc.shaded.com.amazonaws.http.AmazonHttpClient$RequestExecutor.executeHelper(AmazonHttpClient.java:949)
+	at com.amazonaws.athena.jdbc.shaded.com.amazonaws.http.AmazonHttpClient$RequestExecutor.doExecute(AmazonHttpClient.java:662)
+	at com.amazonaws.athena.jdbc.shaded.com.amazonaws.http.AmazonHttpClient$RequestExecutor.executeWithTimer(AmazonHttpClient.java:636)
+	at com.amazonaws.athena.jdbc.shaded.com.amazonaws.http.AmazonHttpClient$RequestExecutor.execute(AmazonHttpClient.java:619)
+	at com.amazonaws.athena.jdbc.shaded.com.amazonaws.http.AmazonHttpClient$RequestExecutor.access$300(AmazonHttpClient.java:587)
+	at com.amazonaws.athena.jdbc.shaded.com.amazonaws.http.AmazonHttpClient$RequestExecutionBuilderImpl.execute(AmazonHttpClient.java:574)
+	at com.amazonaws.athena.jdbc.shaded.com.amazonaws.http.AmazonHttpClient.execute(AmazonHttpClient.java:446)
+	at com.amazonaws.athena.jdbc.shaded.com.amazonaws.services.athena.AmazonAthenaClient.doInvoke(AmazonAthenaClient.java:941)
+	at com.amazonaws.athena.jdbc.shaded.com.amazonaws.services.athena.AmazonAthenaClient.invoke(AmazonAthenaClient.java:917)
+	at com.amazonaws.athena.jdbc.shaded.com.amazonaws.services.athena.AmazonAthenaClient.runQuery(AmazonAthenaClient.java:806)
+	at com.amazonaws.athena.jdbc.AthenaServiceClient.runQuery(AthenaServiceClient.java:159)
+	at com.amazonaws.athena.jdbc.AthenaQueryExecutor.startQuery(AthenaQueryExecutor.java:34)
+	at com.amazonaws.athena.jdbc.AthenaConnection.startQuery(AthenaConnection.java:574)
+	at com.amazonaws.athena.jdbc.AthenaStatement.execute(AthenaStatement.java:204)
+	at com.amazonaws.athena.jdbc.AthenaStatement.executeQuery(AthenaStatement.java:61)
+	at AthenaJDBCTest01.main(AthenaJDBCTest01.java:41)
+Caused by: java.io.FileNotFoundException: File doesn't exist:  /home/sekharvanna/Documents/STSPROJECTS/Amazon Anthena/athena-playground-master/athena_creds
+	at com.amazonaws.auth.PropertiesCredentials.<init>(PropertiesCredentials.java:57)
+	at com.amazonaws.auth.PropertiesFileCredentialsProvider.getCredentials(PropertiesFileCredentialsProvider.java:57)
+	... 18 more
+
+com.amazonaws.SdkClientException: Unable to load AWS credentials from the athena_creds file
+	at com.amazonaws.auth.PropertiesFileCredentialsProvider.getCredentials(PropertiesFileCredentialsProvider.java:59)
+	at com.amazonaws.athena.jdbc.shaded.com.amazonaws.http.AmazonHttpClient$RequestExecutor.getCredentialsFromContext(AmazonHttpClient.java:1029)
+	at com.amazonaws.athena.jdbc.shaded.com.amazonaws.http.AmazonHttpClient$RequestExecutor.executeOneRequest(AmazonHttpClient.java:1049)
+	at com.amazonaws.athena.jdbc.shaded.com.amazonaws.http.AmazonHttpClient$RequestExecutor.executeHelper(AmazonHttpClient.java:949)
+	at com.amazonaws.athena.jdbc.shaded.com.amazonaws.http.AmazonHttpClient$RequestExecutor.doExecute(AmazonHttpClient.java:662)
+	at com.amazonaws.athena.jdbc.shaded.com.amazonaws.http.AmazonHttpClient$RequestExecutor.executeWithTimer(AmazonHttpClient.java:636)
+	at com.amazonaws.athena.jdbc.shaded.com.amazonaws.http.AmazonHttpClient$RequestExecutor.execute(AmazonHttpClient.java:619)
+	at com.amazonaws.athena.jdbc.shaded.com.amazonaws.http.AmazonHttpClient$RequestExecutor.access$300(AmazonHttpClient.java:587)
+	at com.amazonaws.athena.jdbc.shaded.com.amazonaws.http.AmazonHttpClient$RequestExecutionBuilderImpl.execute(AmazonHttpClient.java:574)
+	at com.amazonaws.athena.jdbc.shaded.com.amazonaws.http.AmazonHttpClient.execute(AmazonHttpClient.java:446)
+	at com.amazonaws.athena.jdbc.shaded.com.amazonaws.services.athena.AmazonAthenaClient.doInvoke(AmazonAthenaClient.java:941)
+	at com.amazonaws.athena.jdbc.shaded.com.amazonaws.services.athena.AmazonAthenaClient.invoke(AmazonAthenaClient.java:917)
+	at com.amazonaws.athena.jdbc.shaded.com.amazonaws.services.athena.AmazonAthenaClient.runQuery(AmazonAthenaClient.java:806)
+	at com.amazonaws.athena.jdbc.AthenaServiceClient.runQuery(AthenaServiceClient.java:159)
+	at com.amazonaws.athena.jdbc.AthenaQueryExecutor.startQuery(AthenaQueryExecutor.java:34)
+	at com.amazonaws.athena.jdbc.AthenaConnection.startQuery(AthenaConnection.java:574)
+	at com.amazonaws.athena.jdbc.AthenaStatement.execute(AthenaStatement.java:204)
+	at com.amazonaws.athena.jdbc.AthenaStatement.executeQuery(AthenaStatement.java:61)
+	at AthenaJDBCTest01.main(AthenaJDBCTest01.java:41)
+Caused by: java.io.FileNotFoundException: File doesn't exist:  /home/sekharvanna/Documents/STSPROJECTS/Amazon Anthena/athena-playground-master/athena_creds
+	at com.amazonaws.auth.PropertiesCredentials.<init>(PropertiesCredentials.java:57)
+	at com.amazonaws.auth.PropertiesFileCredentialsProvider.getCredentials(PropertiesFileCredentialsProvider.java:57)
+	... 18 more
+INFO - STARTING DRIVER
+DEBUG - Using custom AWS credentials provider class com.amazonaws.auth.PropertiesFileCredentialsProvider
+INFO - Executing Query 'show tables in sampledata' with Execution ID: f71bb3a5-3a75-493b-bcfa-e9515057b833
+DEBUG - Event Message: Timelog created : 0 ms
+DEBUG - Event Message: Finished Checking Connection. Starting Query:  : 1 ms
+DEBUG - Event Message: Query Started. : 43564 ms
+DEBUG - Event Message: Checking Query Status : 43564 ms
+DEBUG - Event Message: Finishing Checking Query Status : 44820 ms
+DEBUG - Event Message: Query has Completed. : 44820 ms
+DEBUG - Event Message: Finished creating Result Set. : 48353 ms
+DEBUG - Event Message: Finished Executing query : 48354 ms
+DEBUG - Event Message: Timelog created : 0 ms
+DEBUG - Event Message: Next Called : 17709 ms
+DEBUG - Event Message: Next Called : 25208 ms
+DEBUG - Event Message: No more rows available to obtain. Finishing. : 25210 ms
+INFO - STARTING DRIVER
+DEBUG - Using custom AWS credentials provider class com.amazonaws.auth.PropertiesFileCredentialsProvider
+INFO - Executing Query 'show tables in sampledata' with Execution ID: 13a02cdd-21a5-4803-acd4-7dbbce2686de
+DEBUG - Event Message: Timelog created : 0 ms
+DEBUG - Event Message: Finished Checking Connection. Starting Query:  : 0 ms
+DEBUG - Event Message: Query Started. : 1825 ms
+DEBUG - Event Message: Checking Query Status : 1825 ms
+DEBUG - Event Message: Finishing Checking Query Status : 2086 ms
+DEBUG - Event Message: Sleeping until we retry. : 2086 ms
+DEBUG - Event Message: Checking Query Status : 2287 ms
+DEBUG - Event Message: Finishing Checking Query Status : 2538 ms
+DEBUG - Event Message: Query has Completed. : 2538 ms
+DEBUG - Event Message: Finished creating Result Set. : 3012 ms
+DEBUG - Event Message: Finished Executing query : 3012 ms
+DEBUG - Event Message: Timelog created : 0 ms
+DEBUG - Event Message: Next Called : 9844 ms
+DEBUG - Event Message: Next Called : 12205 ms
+DEBUG - Event Message: Next Called : 14453 ms
+DEBUG - Event Message: No more rows available to obtain. Finishing. : 14454 ms
+INFO - STARTING DRIVER
+DEBUG - Using custom AWS credentials provider class com.amazonaws.auth.PropertiesFileCredentialsProvider
+INFO - Executing Query 'show tables in sampledata' with Execution ID: adf7af77-bde0-49e4-b8b7-773f3b042d3f
+DEBUG - Event Message: Timelog created : 0 ms
+DEBUG - Event Message: Finished Checking Connection. Starting Query:  : 0 ms
+DEBUG - Event Message: Query Started. : 1883 ms
+DEBUG - Event Message: Checking Query Status : 1883 ms
+DEBUG - Event Message: Finishing Checking Query Status : 2140 ms
+DEBUG - Event Message: Sleeping until we retry. : 2140 ms
+DEBUG - Event Message: Checking Query Status : 2340 ms
+DEBUG - Event Message: Finishing Checking Query Status : 2587 ms
+DEBUG - Event Message: Query has Completed. : 2587 ms
+DEBUG - Event Message: Finished creating Result Set. : 2992 ms
+DEBUG - Event Message: Finished Executing query : 2992 ms
+DEBUG - Event Message: Timelog created : 0 ms
+DEBUG - Event Message: Next Called : 396 ms
+DEBUG - Event Message: Next Called : 397 ms
+DEBUG - Event Message: Next Called : 397 ms
+DEBUG - Event Message: Next Called : 397 ms
+DEBUG - Event Message: Next Called : 397 ms
+DEBUG - Event Message: No more rows available to obtain. Finishing. : 397 ms
+INFO - STARTING DRIVER
+DEBUG - Using custom AWS credentials provider class com.amazonaws.auth.PropertiesFileCredentialsProvider
+INFO - Executing Query 'show tables in sampledata' with Execution ID: 431ef3cd-fada-4fec-b04d-6bbd4e1c5e44
+ERROR - Query 431ef3cd-fada-4fec-b04d-6bbd4e1c5e44, failed with reason FAILED: SemanticException [Error 10072]: Database does not exist: sampledata and state FAILED
+DEBUG - Event Message: Timelog created : 0 ms
+DEBUG - Event Message: Finished Checking Connection. Starting Query:  : 0 ms
+DEBUG - Event Message: Query Started. : 9292 ms
+DEBUG - Event Message: Checking Query Status : 9292 ms
+DEBUG - Event Message: Finishing Checking Query Status : 9568 ms
+DEBUG - Event Message: Sleeping until we retry. : 9568 ms
+DEBUG - Event Message: Checking Query Status : 9768 ms
+DEBUG - Event Message: Finishing Checking Query Status : 10031 ms
+DEBUG - Event Message: Sleeping until we retry. : 10031 ms
+DEBUG - Event Message: Checking Query Status : 10232 ms
+DEBUG - Event Message: Finishing Checking Query Status : 10619 ms
+DEBUG - Event Message: Finished Executing query : 10620 ms
+INFO - STARTING DRIVER
+DEBUG - Using custom AWS credentials provider class com.amazonaws.auth.PropertiesFileCredentialsProvider
+INFO - Executing Query 'show tables in sampledata' with Execution ID: 597b28b6-516a-4d05-8643-d262caca3a11
+ERROR - Query 597b28b6-516a-4d05-8643-d262caca3a11, failed with reason FAILED: SemanticException [Error 10072]: Database does not exist: sampledata and state FAILED
+DEBUG - Event Message: Timelog created : 0 ms
+DEBUG - Event Message: Finished Checking Connection. Starting Query:  : 0 ms
+DEBUG - Event Message: Query Started. : 1674 ms
+DEBUG - Event Message: Checking Query Status : 1674 ms
+DEBUG - Event Message: Finishing Checking Query Status : 1987 ms
+DEBUG - Event Message: Sleeping until we retry. : 1987 ms
+DEBUG - Event Message: Checking Query Status : 2187 ms
+DEBUG - Event Message: Finishing Checking Query Status : 2510 ms
+DEBUG - Event Message: Sleeping until we retry. : 2510 ms
+DEBUG - Event Message: Checking Query Status : 2710 ms
+DEBUG - Event Message: Finishing Checking Query Status : 2948 ms
+DEBUG - Event Message: Finished Executing query : 2949 ms
+INFO - STARTING DRIVER
+DEBUG - Using custom AWS credentials provider class com.amazonaws.auth.PropertiesFileCredentialsProvider
+INFO - Executing Query 'show tables in sampledata' with Execution ID: 73eb0904-840c-4d62-b6d4-be052525811c
+DEBUG - Event Message: Timelog created : 0 ms
+DEBUG - Event Message: Finished Checking Connection. Starting Query:  : 0 ms
+DEBUG - Event Message: Query Started. : 1528 ms
+DEBUG - Event Message: Checking Query Status : 1528 ms
+DEBUG - Event Message: Finishing Checking Query Status : 1776 ms
+DEBUG - Event Message: Sleeping until we retry. : 1776 ms
+DEBUG - Event Message: Checking Query Status : 1977 ms
+DEBUG - Event Message: Finishing Checking Query Status : 2216 ms
+DEBUG - Event Message: Query has Completed. : 2216 ms
+DEBUG - Event Message: Finished creating Result Set. : 2783 ms
+DEBUG - Event Message: Finished Executing query : 2783 ms
+DEBUG - Event Message: Timelog created : 0 ms
+DEBUG - Event Message: Next Called : 557 ms
+DEBUG - Event Message: Next Called : 557 ms
+DEBUG - Event Message: No more rows available to obtain. Finishing. : 557 ms
+INFO - STARTING DRIVER
+DEBUG - Using custom AWS credentials provider class com.amazonaws.auth.PropertiesFileCredentialsProvider
+INFO - Executing Query 'show tables in sampledata' with Execution ID: daeb7dcd-b0d4-4a69-9b02-c7ece20d7b6b
+DEBUG - Event Message: Timelog created : 0 ms
+DEBUG - Event Message: Finished Checking Connection. Starting Query:  : 0 ms
+DEBUG - Event Message: Query Started. : 1578 ms
+DEBUG - Event Message: Checking Query Status : 1578 ms
+DEBUG - Event Message: Finishing Checking Query Status : 1833 ms
+DEBUG - Event Message: Sleeping until we retry. : 1833 ms
+DEBUG - Event Message: Checking Query Status : 2033 ms
+DEBUG - Event Message: Finishing Checking Query Status : 2272 ms
+DEBUG - Event Message: Query has Completed. : 2272 ms
+DEBUG - Event Message: Finished creating Result Set. : 2686 ms
+DEBUG - Event Message: Finished Executing query : 2686 ms
+DEBUG - Event Message: Timelog created : 0 ms
+DEBUG - Event Message: Next Called : 405 ms
+DEBUG - Event Message: Next Called : 406 ms
+DEBUG - Event Message: Next Called : 406 ms
+DEBUG - Event Message: No more rows available to obtain. Finishing. : 406 ms
+INFO - STARTING DRIVER
+DEBUG - Using custom AWS credentials provider class com.amazonaws.auth.PropertiesFileCredentialsProvider
+INFO - Executing Query 'ALTER TABLE first_table CHANGE age age1 bigint' with Execution ID: b92e3d72-06dc-46db-bce1-e1202cf94198
+ERROR - Query b92e3d72-06dc-46db-bce1-e1202cf94198, failed with reason FAILED: Execution Error, return code 1 from org.apache.hadoop.hive.ql.exec.DDLTask. Invalid column reference age and state FAILED
+DEBUG - Event Message: Timelog created : 0 ms
+DEBUG - Event Message: Finished Checking Connection. Starting Query:  : 0 ms
+DEBUG - Event Message: Query Started. : 1945 ms
+DEBUG - Event Message: Checking Query Status : 1945 ms
+DEBUG - Event Message: Finishing Checking Query Status : 2189 ms
+DEBUG - Event Message: Sleeping until we retry. : 2189 ms
+DEBUG - Event Message: Checking Query Status : 2389 ms
+DEBUG - Event Message: Finishing Checking Query Status : 2635 ms
+DEBUG - Event Message: Sleeping until we retry. : 2635 ms
+DEBUG - Event Message: Checking Query Status : 2835 ms
+DEBUG - Event Message: Finishing Checking Query Status : 3067 ms
+DEBUG - Event Message: Sleeping until we retry. : 3067 ms
+DEBUG - Event Message: Checking Query Status : 3268 ms
+DEBUG - Event Message: Finishing Checking Query Status : 3599 ms
+DEBUG - Event Message: Finished Executing query : 3600 ms
+INFO - STARTING DRIVER
+DEBUG - Using custom AWS credentials provider class com.amazonaws.auth.PropertiesFileCredentialsProvider
+INFO - Executing Query 'ALTER TABLE first_table CHANGE age13 age bigint' with Execution ID: c864026e-0821-4a88-aba5-e19e98b6c2d3
+ERROR - Query c864026e-0821-4a88-aba5-e19e98b6c2d3, failed with reason FAILED: Execution Error, return code 1 from org.apache.hadoop.hive.ql.exec.DDLTask. Invalid column reference age13 and state FAILED
+DEBUG - Event Message: Timelog created : 0 ms
+DEBUG - Event Message: Finished Checking Connection. Starting Query:  : 0 ms
+DEBUG - Event Message: Query Started. : 1503 ms
+DEBUG - Event Message: Checking Query Status : 1503 ms
+DEBUG - Event Message: Finishing Checking Query Status : 1751 ms
+DEBUG - Event Message: Sleeping until we retry. : 1751 ms
+DEBUG - Event Message: Checking Query Status : 1951 ms
+DEBUG - Event Message: Finishing Checking Query Status : 2185 ms
+DEBUG - Event Message: Sleeping until we retry. : 2185 ms
+DEBUG - Event Message: Checking Query Status : 2385 ms
+DEBUG - Event Message: Finishing Checking Query Status : 2625 ms
+DEBUG - Event Message: Finished Executing query : 2626 ms
+INFO - STARTING DRIVER
+DEBUG - Using custom AWS credentials provider class com.amazonaws.auth.PropertiesFileCredentialsProvider
+INFO - Executing Query 'ALTER TABLE my.first_table CHANGE age13 age bigint;' with Execution ID: 894afe95-ec06-456f-8d0e-2e5fbfc58dca
+DEBUG - Event Message: Timelog created : 0 ms
+DEBUG - Event Message: Finished Checking Connection. Starting Query:  : 0 ms
+DEBUG - Event Message: Query Started. : 1455 ms
+DEBUG - Event Message: Checking Query Status : 1455 ms
+DEBUG - Event Message: Finishing Checking Query Status : 1699 ms
+DEBUG - Event Message: Sleeping until we retry. : 1699 ms
+DEBUG - Event Message: Checking Query Status : 1899 ms
+DEBUG - Event Message: Finishing Checking Query Status : 2135 ms
+DEBUG - Event Message: Sleeping until we retry. : 2135 ms
+DEBUG - Event Message: Checking Query Status : 2337 ms
+DEBUG - Event Message: Finishing Checking Query Status : 2571 ms
+DEBUG - Event Message: Sleeping until we retry. : 2571 ms
+DEBUG - Event Message: Checking Query Status : 2772 ms
+DEBUG - Event Message: Finishing Checking Query Status : 3004 ms
+DEBUG - Event Message: Sleeping until we retry. : 3004 ms
+DEBUG - Event Message: Checking Query Status : 3204 ms
+DEBUG - Event Message: Finishing Checking Query Status : 3441 ms
+DEBUG - Event Message: Query has Completed. : 3441 ms
+DEBUG - Event Message: Finished creating Result Set. : 3894 ms
+DEBUG - Event Message: Finished Executing query : 3894 ms
+DEBUG - Event Message: Timelog created : 0 ms
+DEBUG - Event Message: Next Called : 444 ms
+DEBUG - Event Message: No more rows available to obtain. Finishing. : 444 ms
+INFO - STARTING DRIVER
+DEBUG - Using custom AWS credentials provider class com.amazonaws.auth.PropertiesFileCredentialsProvider
+INFO - Executing Query 'ALTER TABLE my.first_table ADD COLUMNS (king string)' with Execution ID: 59f80649-d565-4b4d-87f6-22ff449c0163
+DEBUG - Event Message: Timelog created : 0 ms
+DEBUG - Event Message: Finished Checking Connection. Starting Query:  : 0 ms
+DEBUG - Event Message: Query Started. : 1520 ms
+DEBUG - Event Message: Checking Query Status : 1520 ms
+DEBUG - Event Message: Finishing Checking Query Status : 1769 ms
+DEBUG - Event Message: Sleeping until we retry. : 1769 ms
+DEBUG - Event Message: Checking Query Status : 1969 ms
+DEBUG - Event Message: Finishing Checking Query Status : 2212 ms
+DEBUG - Event Message: Sleeping until we retry. : 2212 ms
+DEBUG - Event Message: Checking Query Status : 2412 ms
+DEBUG - Event Message: Finishing Checking Query Status : 2657 ms
+DEBUG - Event Message: Sleeping until we retry. : 2657 ms
+DEBUG - Event Message: Checking Query Status : 2858 ms
+DEBUG - Event Message: Finishing Checking Query Status : 3194 ms
+DEBUG - Event Message: Sleeping until we retry. : 3194 ms
+DEBUG - Event Message: Checking Query Status : 3394 ms
+DEBUG - Event Message: Finishing Checking Query Status : 3869 ms
+DEBUG - Event Message: Query has Completed. : 3869 ms
+DEBUG - Event Message: Finished creating Result Set. : 4242 ms
+DEBUG - Event Message: Finished Executing query : 4242 ms
+DEBUG - Event Message: Timelog created : 0 ms
+DEBUG - Event Message: Next Called : 361 ms
+DEBUG - Event Message: No more rows available to obtain. Finishing. : 361 ms
+INFO - STARTING DRIVER
+DEBUG - Using custom AWS credentials provider class com.amazonaws.auth.PropertiesFileCredentialsProvider
+INFO - Executing Query 'show tables in sampledata' with Execution ID: 7ace589a-3212-441d-b5b0-524baa42f1a8
+DEBUG - Event Message: Timelog created : 0 ms
+DEBUG - Event Message: Finished Checking Connection. Starting Query:  : 0 ms
+DEBUG - Event Message: Query Started. : 1479 ms
+DEBUG - Event Message: Checking Query Status : 1479 ms
+DEBUG - Event Message: Finishing Checking Query Status : 1722 ms
+DEBUG - Event Message: Sleeping until we retry. : 1722 ms
+DEBUG - Event Message: Checking Query Status : 1922 ms
+DEBUG - Event Message: Finishing Checking Query Status : 2160 ms
+DEBUG - Event Message: Query has Completed. : 2160 ms
+DEBUG - Event Message: Finished creating Result Set. : 2548 ms
+DEBUG - Event Message: Finished Executing query : 2548 ms
+DEBUG - Event Message: Timelog created : 0 ms
+DEBUG - Event Message: Next Called : 379 ms
+DEBUG - Event Message: Next Called : 379 ms
+DEBUG - Event Message: No more rows available to obtain. Finishing. : 379 ms
+INFO - STARTING DRIVER
+DEBUG - Using custom AWS credentials provider class com.amazonaws.auth.PropertiesFileCredentialsProvider
+INFO - Executing Query 'SELECT * from sampledata.companyfunding LIMIT 20' with Execution ID: fe394c7c-c3eb-48af-be08-11d0045c5c1a
+DEBUG - Event Message: Timelog created : 0 ms
+DEBUG - Event Message: Finished Checking Connection. Starting Query:  : 0 ms
+DEBUG - Event Message: Query Started. : 1644 ms
+DEBUG - Event Message: Checking Query Status : 1644 ms
+DEBUG - Event Message: Finishing Checking Query Status : 1901 ms
+DEBUG - Event Message: Sleeping until we retry. : 1901 ms
+DEBUG - Event Message: Checking Query Status : 2101 ms
+DEBUG - Event Message: Finishing Checking Query Status : 2346 ms
+DEBUG - Event Message: Sleeping until we retry. : 2346 ms
+DEBUG - Event Message: Checking Query Status : 2546 ms
+DEBUG - Event Message: Finishing Checking Query Status : 2791 ms
+DEBUG - Event Message: Sleeping until we retry. : 2791 ms
+DEBUG - Event Message: Checking Query Status : 2991 ms
+DEBUG - Event Message: Finishing Checking Query Status : 3235 ms
+DEBUG - Event Message: Sleeping until we retry. : 3235 ms
+DEBUG - Event Message: Checking Query Status : 3435 ms
+DEBUG - Event Message: Finishing Checking Query Status : 3681 ms
+DEBUG - Event Message: Sleeping until we retry. : 3681 ms
+DEBUG - Event Message: Checking Query Status : 3881 ms
+DEBUG - Event Message: Finishing Checking Query Status : 4125 ms
+DEBUG - Event Message: Query has Completed. : 4125 ms
+DEBUG - Event Message: Finished creating Result Set. : 4582 ms
+DEBUG - Event Message: Finished Executing query : 4582 ms
+INFO - STARTING DRIVER
+DEBUG - Using custom AWS credentials provider class com.amazonaws.auth.PropertiesFileCredentialsProvider
+INFO - Executing Query 'SELECT * from sampledata.companyfunding LIMIT 20' with Execution ID: 72e7eb5f-dcda-4370-9345-fb142893aaa9
+DEBUG - Event Message: Timelog created : 0 ms
+DEBUG - Event Message: Finished Checking Connection. Starting Query:  : 0 ms
+DEBUG - Event Message: Query Started. : 1672 ms
+DEBUG - Event Message: Checking Query Status : 1672 ms
+DEBUG - Event Message: Finishing Checking Query Status : 1922 ms
+DEBUG - Event Message: Sleeping until we retry. : 1922 ms
+DEBUG - Event Message: Checking Query Status : 2122 ms
+DEBUG - Event Message: Finishing Checking Query Status : 2360 ms
+DEBUG - Event Message: Sleeping until we retry. : 2360 ms
+DEBUG - Event Message: Checking Query Status : 2560 ms
+DEBUG - Event Message: Finishing Checking Query Status : 2796 ms
+DEBUG - Event Message: Sleeping until we retry. : 2796 ms
+DEBUG - Event Message: Checking Query Status : 2996 ms
+DEBUG - Event Message: Finishing Checking Query Status : 3232 ms
+DEBUG - Event Message: Sleeping until we retry. : 3232 ms
+DEBUG - Event Message: Checking Query Status : 3432 ms
+DEBUG - Event Message: Finishing Checking Query Status : 3671 ms
+DEBUG - Event Message: Query has Completed. : 3671 ms
+DEBUG - Event Message: Finished creating Result Set. : 4087 ms
+DEBUG - Event Message: Finished Executing query : 4087 ms
+INFO - STARTING DRIVER
+DEBUG - Using custom AWS credentials provider class com.amazonaws.auth.PropertiesFileCredentialsProvider
+INFO - Executing Query 'select * from sampledata.json_table;' with Execution ID: 898043f7-5f1e-4baf-954d-3b0ff842898a
+DEBUG - Event Message: Timelog created : 0 ms
+DEBUG - Event Message: Finished Checking Connection. Starting Query:  : 0 ms
+DEBUG - Event Message: Query Started. : 8099 ms
+DEBUG - Event Message: Checking Query Status : 8099 ms
+DEBUG - Event Message: Finishing Checking Query Status : 8353 ms
+DEBUG - Event Message: Sleeping until we retry. : 8353 ms
+DEBUG - Event Message: Checking Query Status : 8553 ms
+DEBUG - Event Message: Finishing Checking Query Status : 8790 ms
+DEBUG - Event Message: Sleeping until we retry. : 8790 ms
+DEBUG - Event Message: Checking Query Status : 8990 ms
+DEBUG - Event Message: Finishing Checking Query Status : 9221 ms
+DEBUG - Event Message: Sleeping until we retry. : 9221 ms
+DEBUG - Event Message: Checking Query Status : 9421 ms
+DEBUG - Event Message: Finishing Checking Query Status : 9655 ms
+DEBUG - Event Message: Sleeping until we retry. : 9655 ms
+DEBUG - Event Message: Checking Query Status : 9855 ms
+DEBUG - Event Message: Finishing Checking Query Status : 10097 ms
+DEBUG - Event Message: Query has Completed. : 10097 ms
+DEBUG - Event Message: Finished creating Result Set. : 10739 ms
+DEBUG - Event Message: Finished Executing query : 10739 ms
+INFO - STARTING DRIVER
+DEBUG - Using custom AWS credentials provider class com.amazonaws.auth.PropertiesFileCredentialsProvider
+INFO - Executing Query 'select * from sampledata.json_table' with Execution ID: 1ca1e067-9799-4e01-a6b2-f98666e64fe4
+DEBUG - Event Message: Timelog created : 0 ms
+DEBUG - Event Message: Finished Checking Connection. Starting Query:  : 0 ms
+DEBUG - Event Message: Query Started. : 1803 ms
+DEBUG - Event Message: Checking Query Status : 1803 ms
+DEBUG - Event Message: Finishing Checking Query Status : 2064 ms
+DEBUG - Event Message: Sleeping until we retry. : 2064 ms
+DEBUG - Event Message: Checking Query Status : 2264 ms
+DEBUG - Event Message: Finishing Checking Query Status : 2523 ms
+DEBUG - Event Message: Sleeping until we retry. : 2523 ms
+DEBUG - Event Message: Checking Query Status : 2723 ms
+DEBUG - Event Message: Finishing Checking Query Status : 2964 ms
+DEBUG - Event Message: Sleeping until we retry. : 2964 ms
+DEBUG - Event Message: Checking Query Status : 3164 ms
+DEBUG - Event Message: Finishing Checking Query Status : 3409 ms
+DEBUG - Event Message: Sleeping until we retry. : 3409 ms
+DEBUG - Event Message: Checking Query Status : 3609 ms
+DEBUG - Event Message: Finishing Checking Query Status : 3848 ms
+DEBUG - Event Message: Query has Completed. : 3848 ms
+DEBUG - Event Message: Finished creating Result Set. : 4406 ms
+DEBUG - Event Message: Finished Executing query : 4406 ms
+INFO - STARTING DRIVER
+DEBUG - Using custom AWS credentials provider class com.amazonaws.auth.PropertiesFileCredentialsProvider
+INFO - Executing Query 'select * from sampledata.companyfunding' with Execution ID: f285ba6d-9324-4d24-a0fe-975dd90a0ae6
+DEBUG - Event Message: Timelog created : 0 ms
+DEBUG - Event Message: Finished Checking Connection. Starting Query:  : 0 ms
+DEBUG - Event Message: Query Started. : 1491 ms
+DEBUG - Event Message: Checking Query Status : 1491 ms
+DEBUG - Event Message: Finishing Checking Query Status : 1737 ms
+DEBUG - Event Message: Sleeping until we retry. : 1737 ms
+DEBUG - Event Message: Checking Query Status : 1938 ms
+DEBUG - Event Message: Finishing Checking Query Status : 2178 ms
+DEBUG - Event Message: Sleeping until we retry. : 2178 ms
+DEBUG - Event Message: Checking Query Status : 2378 ms
+DEBUG - Event Message: Finishing Checking Query Status : 2617 ms
+DEBUG - Event Message: Query has Completed. : 2617 ms
+DEBUG - Event Message: Finished creating Result Set. : 3836 ms
+DEBUG - Event Message: Finished Executing query : 3836 ms
+INFO - STARTING DRIVER
+DEBUG - Using custom AWS credentials provider class com.amazonaws.auth.PropertiesFileCredentialsProvider
+INFO - Executing Query 'SELECT * FROM sesblog limit 10' with Execution ID: 8ab6e2bf-4c73-47a8-8af0-c7d46d4a191a
+ERROR - Query 8ab6e2bf-4c73-47a8-8af0-c7d46d4a191a, failed with reason  Table sesblog not found. Please check your query. and state FAILED
+DEBUG - Event Message: Timelog created : 0 ms
+DEBUG - Event Message: Finished Checking Connection. Starting Query:  : 0 ms
+DEBUG - Event Message: Query Started. : 1683 ms
+DEBUG - Event Message: Checking Query Status : 1683 ms
+DEBUG - Event Message: Finishing Checking Query Status : 1934 ms
+DEBUG - Event Message: Sleeping until we retry. : 1934 ms
+DEBUG - Event Message: Checking Query Status : 2134 ms
+DEBUG - Event Message: Finishing Checking Query Status : 2375 ms
+DEBUG - Event Message: Sleeping until we retry. : 2375 ms
+DEBUG - Event Message: Checking Query Status : 2575 ms
+DEBUG - Event Message: Finishing Checking Query Status : 2819 ms
+DEBUG - Event Message: Finished Executing query : 2820 ms
+INFO - STARTING DRIVER
+DEBUG - Using custom AWS credentials provider class com.amazonaws.auth.PropertiesFileCredentialsProvider
+INFO - Executing Query 'SELECT * FROM sampledata.sesblog limit 10' with Execution ID: a704ef43-e262-4fdd-b904-d91515b408ef
+DEBUG - Event Message: Timelog created : 0 ms
+DEBUG - Event Message: Finished Checking Connection. Starting Query:  : 0 ms
+DEBUG - Event Message: Query Started. : 1527 ms
+DEBUG - Event Message: Checking Query Status : 1527 ms
+DEBUG - Event Message: Finishing Checking Query Status : 1796 ms
+DEBUG - Event Message: Sleeping until we retry. : 1796 ms
+DEBUG - Event Message: Checking Query Status : 1997 ms
+DEBUG - Event Message: Finishing Checking Query Status : 2227 ms
+DEBUG - Event Message: Sleeping until we retry. : 2227 ms
+DEBUG - Event Message: Checking Query Status : 2428 ms
+DEBUG - Event Message: Finishing Checking Query Status : 2665 ms
+DEBUG - Event Message: Sleeping until we retry. : 2665 ms
+DEBUG - Event Message: Checking Query Status : 2865 ms
+DEBUG - Event Message: Finishing Checking Query Status : 3096 ms
+DEBUG - Event Message: Sleeping until we retry. : 3096 ms
+DEBUG - Event Message: Checking Query Status : 3296 ms
+DEBUG - Event Message: Finishing Checking Query Status : 3531 ms
+DEBUG - Event Message: Query has Completed. : 3531 ms
+DEBUG - Event Message: Finished creating Result Set. : 3949 ms
+DEBUG - Event Message: Finished Executing query : 3949 ms
+DEBUG - Event Message: Timelog created : 0 ms
+DEBUG - Event Message: Next Called : 409 ms
+DEBUG - Event Message: No more rows available to obtain. Finishing. : 409 ms
+INFO - STARTING DRIVER
+DEBUG - Using custom AWS credentials provider class com.amazonaws.auth.PropertiesFileCredentialsProvider
+INFO - Executing Query 'SELECT * FROM sampledata.sesblog limit 10' with Execution ID: dd51b7a0-08e9-4d0c-9514-8478f2e0f9c6
+DEBUG - Event Message: Timelog created : 0 ms
+DEBUG - Event Message: Finished Checking Connection. Starting Query:  : 0 ms
+DEBUG - Event Message: Query Started. : 1481 ms
+DEBUG - Event Message: Checking Query Status : 1481 ms
+DEBUG - Event Message: Finishing Checking Query Status : 1725 ms
+DEBUG - Event Message: Sleeping until we retry. : 1725 ms
+DEBUG - Event Message: Checking Query Status : 1925 ms
+DEBUG - Event Message: Finishing Checking Query Status : 2168 ms
+DEBUG - Event Message: Sleeping until we retry. : 2168 ms
+DEBUG - Event Message: Checking Query Status : 2368 ms
+DEBUG - Event Message: Finishing Checking Query Status : 2600 ms
+DEBUG - Event Message: Sleeping until we retry. : 2600 ms
+DEBUG - Event Message: Checking Query Status : 2800 ms
+DEBUG - Event Message: Finishing Checking Query Status : 3035 ms
+DEBUG - Event Message: Sleeping until we retry. : 3035 ms
+DEBUG - Event Message: Checking Query Status : 3235 ms
+DEBUG - Event Message: Finishing Checking Query Status : 3463 ms
+DEBUG - Event Message: Query has Completed. : 3463 ms
+DEBUG - Event Message: Finished creating Result Set. : 3870 ms
+DEBUG - Event Message: Finished Executing query : 3870 ms
+DEBUG - Event Message: Timelog created : 0 ms
+DEBUG - Event Message: Next Called : 398 ms
+DEBUG - Event Message: No more rows available to obtain. Finishing. : 398 ms
+INFO - STARTING DRIVER
+DEBUG - Using custom AWS credentials provider class com.amazonaws.auth.PropertiesFileCredentialsProvider
+INFO - Executing Query 'SELECT * FROM sampledata.sesblog limit 10' with Execution ID: 21a61dd0-efb3-442e-b167-9fdc9f661b91
+DEBUG - Event Message: Timelog created : 0 ms
+DEBUG - Event Message: Finished Checking Connection. Starting Query:  : 0 ms
+DEBUG - Event Message: Query Started. : 2498 ms
+DEBUG - Event Message: Checking Query Status : 2498 ms
+DEBUG - Event Message: Finishing Checking Query Status : 2796 ms
+DEBUG - Event Message: Sleeping until we retry. : 2796 ms
+DEBUG - Event Message: Checking Query Status : 2996 ms
+DEBUG - Event Message: Finishing Checking Query Status : 3235 ms
+DEBUG - Event Message: Sleeping until we retry. : 3235 ms
+DEBUG - Event Message: Checking Query Status : 3435 ms
+DEBUG - Event Message: Finishing Checking Query Status : 3672 ms
+DEBUG - Event Message: Sleeping until we retry. : 3672 ms
+DEBUG - Event Message: Checking Query Status : 3872 ms
+DEBUG - Event Message: Finishing Checking Query Status : 4106 ms
+DEBUG - Event Message: Sleeping until we retry. : 4106 ms
+DEBUG - Event Message: Checking Query Status : 4306 ms
+DEBUG - Event Message: Finishing Checking Query Status : 4545 ms
+DEBUG - Event Message: Query has Completed. : 4545 ms
+DEBUG - Event Message: Finished creating Result Set. : 5246 ms
+DEBUG - Event Message: Finished Executing query : 5246 ms
+DEBUG - Event Message: Timelog created : 0 ms
+DEBUG - Event Message: Next Called : 71144 ms
+DEBUG - Event Message: No more rows available to obtain. Finishing. : 71145 ms
+INFO - STARTING DRIVER
+DEBUG - Using custom AWS credentials provider class com.amazonaws.auth.PropertiesFileCredentialsProvider
+INFO - Executing Query 'SELECT * FROM sampledata.sesblog limit 10' with Execution ID: 8ef7400b-383f-418e-bea3-61fbb94489fc
+DEBUG - Event Message: Timelog created : 0 ms
+DEBUG - Event Message: Finished Checking Connection. Starting Query:  : 0 ms
+DEBUG - Event Message: Query Started. : 1510 ms
+DEBUG - Event Message: Checking Query Status : 1510 ms
+DEBUG - Event Message: Finishing Checking Query Status : 1757 ms
+DEBUG - Event Message: Sleeping until we retry. : 1757 ms
+DEBUG - Event Message: Checking Query Status : 1957 ms
+DEBUG - Event Message: Finishing Checking Query Status : 2194 ms
+DEBUG - Event Message: Sleeping until we retry. : 2194 ms
+DEBUG - Event Message: Checking Query Status : 2394 ms
+DEBUG - Event Message: Finishing Checking Query Status : 2631 ms
+DEBUG - Event Message: Sleeping until we retry. : 2631 ms
+DEBUG - Event Message: Checking Query Status : 2832 ms
+DEBUG - Event Message: Finishing Checking Query Status : 3071 ms
+DEBUG - Event Message: Query has Completed. : 3071 ms
+DEBUG - Event Message: Finished creating Result Set. : 3507 ms
+DEBUG - Event Message: Finished Executing query : 3507 ms
+DEBUG - Event Message: Timelog created : 0 ms
+DEBUG - Event Message: Next Called : 426 ms
+DEBUG - Event Message: No more rows available to obtain. Finishing. : 426 ms
